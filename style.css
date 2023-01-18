@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background: whitesmoke;
+    max-height: ;
+}
+.menu
+{
+  position:fixed;
+  left:0px;
+  top:-50px;
+  width:100vw;
+  padding:20px;
+  text-align:center;
+  background-color:rgba(0,0,0,0.9);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+  font-size:20px;
+  color:white;
+  /* transition */
+  transition:top 1s;
+  -webkit-transition:top 1s;
+}
+.menu:hover
+{
+  top:0px;
+}
+/* SPAN OF SPAN */
+.menu span
+{
+  margin:20px;
+}
+.menu span a:hover
+{
+  color:rgba(255,255,255,0.5);
+}
+/* Body and Title*/
+a
+{
+  text-decoration:none;
+  color:white;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+     top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+   }
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay-content img{
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family:'Seymour One', sans-serif; 
+  }
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #black;
+  }
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+ .hero-image button{
+    background-color: black;
+    border-radius: 30px;
+    font-size: 30px;
+ }
+ .hero-text{
+    font-size: 30px;
+ }
+
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  
+    .menu-toggle {
+      /* display: block; */
+    }
+  }
+
+       
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.franciskurkdjian.com/on/demandware.static/-/Sites-mfk-master-catalog/default/dw8b28ed85/BaccaratRouge540/PDP-singlemood-repush-R540-candle-desktop-1320x743.jpg);
+
+  /* Set a specific height */
+  height: 100%;
+  z-index: -1;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+  
+  /* /* .active {
+          background-color: #717171;
+        }
+        /* Fading animation */
+        /* .fade {
+          animation-name: fade;
+          animation-duration: 1.5s; */
+
+        /* @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        } */ 
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        /* media for tablet */
+         @media screen and (max-width: 768px){}
+        /* media for desktop        */
+         @media screen and (min-width: 820px){}
+     footer{
+            position: relative;
+            bottom:0px;
+            left: 0;
+            right: 0;
+            background-color: orange;
+            height: 100px;
+            width: 100%;
+            font-family: "Open Sans";
+            padding-top: 10px;
+            color:white;
+          
+        }
+        .footer_content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+          
+        }
+        .footer_content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 10px;
+            font-size: 19px;
+          text-decoration: none;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 16px;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #fff;
+          margin:20px;
+        }
+        .socials a i{
+            font-size: 16px;
+            transition: color .4s ease;
+        
+        }
+        .socials a:focus i{
+            color: orange;
+        }
+        
+        .footer-bottom{
+            background: #000;
+         
+        }
+        .footer_content h3{
+            font-size: 30px;
+            font-weight: 400;
+        }

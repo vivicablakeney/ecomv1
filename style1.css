@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background: pink;
+    box-sizing: border-box;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-height: 400px;
+}
+/* nav starts */
+.menu{
+  position:fixed;
+  left:0px;
+  top:-50px;
+  width:100vw;
+  padding:20px;
+  text-align:center;
+  background-color:rgba(0,0,0,0.9);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+  font-size:20px;
+  color:white;
+  /* transition */
+  transition:top 1s;
+  -webkit-transition:top 1s;
+}
+.menu:hover{
+  top:0px;
+}
+/* SPAN OF SPAN */
+.menu span
+{
+  margin:20px;
+}
+.menu span a:hover
+{
+  color:rgba(255,255,255,0.5);
+}
+/* Body and Title*/
+a
+{
+  text-decoration:none;
+  color:white;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+   }
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+.overlay-content img {
+    max-height: 500px;
+  }
+  /* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family:'Seymour One', sans-serif;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #black;
+  }
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .header{
+    background-color: black;
+  }
+  /* nav ends */
+
+/* products starts */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+.grid-container{
+    display: flex;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.card img{
+    height: 300px;
+    width: 400px;
+}
+.card{
+    justify-content: space-between;
+}
+footer{
+    position: relative;
+    bottom:0px;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    color:white;
+  
+}
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  
+}
+.footer_content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 10px;
+    font-size: 19px;
+  text-decoration: none;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+  margin:20px;
+}
+.socials a i{
+    font-size: 16px;
+    transition: color .4s ease;
+
+}
+.socials a:focus i{
+    color:gray;
+}
+
+.footer-bottom{
+    background: #000;
+ 
+}
+.footer_content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* media for tablet */
+  @media screen and (max-width: 768px){}
+/* media for desktop */
+ @media screen and (min-width: 820px){}
+ @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+
+
+
+
+
